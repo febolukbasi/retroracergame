@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RetroRacer</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <header>
+        <h1>RetroRacer</h1>
+    </header>
+    <main>
+        <div id="homeScreen">
+            <div id="volumeDial"><p>Volume:</p>
+                <input type="range" id="volumeControl" min="0" max="100" value="50">
+                <!-- https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input -->
+                <button id="pauseButton">Pause</button>
+            </div>
+            <p>Welcome To RetroRacer! Are You Ready To Race?</p>
+
+            <p>Before we get started, let's insert your name!</p>
+                <input type="text" id="playerName" placeholder="Enter Your Name">
+            <button id="playButton">Race!</button>
+        </div>
+            
+        <div id="gameScreen" style="display: none;">
+            <div id="player"></div>
+        </div>
+
+    </main>
+    <footer>
+
+    </footer>
+    <script src="scripts/script.js"></script>
+</body>
+</html>

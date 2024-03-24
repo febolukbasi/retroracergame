@@ -1,0 +1,99 @@
+@font-face {
+    font-family: 'Upheaval';
+    src: url('../fonts/upheavtt.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    background-color:#B94429;
+}
+
+h1, p, input, button{
+color: #FDDA7D;
+font-family: 'Upheaval', sans-serif;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#volumeDial {
+    display: flex;
+    align-items:center;
+}
+
+#volumeDial button {
+color: #FDDA7D;
+background-color: #809090;
+}
+
+#homeScreen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#playButton {
+    margin: 0.5em;
+    padding-right: 5em;
+    padding-left: 5em;
+    padding-bottom: 1.5em;
+    padding-top: 1.5em;
+    font-size: 1em;
+    background-color: #809090;
+    color: #FDDA7D;
+    text-decoration: none;
+    border: none;
+    border-radius: 0.1em;
+    cursor: pointer;
+    border: 0.1em solid #FDDA7D;
+}
+
+#playerName {
+    margin: 0.5em;
+    padding: 1em;
+    font-size: 1em;
+    background-color: #809090;
+}
+
+/* ChatGPT Prompt: "how do I target the placeholder of the input?" */
+#playerName ::placeholder {
+    color: #FDDA7D;
+    font-family: 'Upheaval', sans-serif;
+    opacity: 1;
+}
+
+/**/
+
+#gameScreen {
+    width: 600px;
+    height: 500px;
+    position: relative;
+    background-color: green;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+  margin-top: 50px;
+  }
+
+
+  #player {
+    width: 50px;
+    height: 100px;
+    position: absolute;
+    bottom: 10px;
+    background-color: red;
+  }
+  
+  .obstacle {
+    width: 50px;
+    height: 100px;
+    position: absolute;
+    background-color: blue;
+  }
